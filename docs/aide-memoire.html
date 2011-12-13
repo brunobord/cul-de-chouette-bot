@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aide Mémoire - Cul de Chouette</title>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="text.css" />
+    <link rel="stylesheet" href="960.css" />
+    <style type="text/css">
+        h1, h2, h3, h4 {
+            font-family: 'IM Fell English SC', Georgia, Verdana, sans-serif;
+        }
+        body {
+            font-family: 'IM Fell Great Primer SC', Georgia, Verdana, sans-serif;
+        }
+        .combinaison {
+            padding: 1em;
+            border: 1px solid steelblue;
+            -moz-border-radius: 10px; /* Firefox */
+            -webkit-border-radius: 10px; /* Safari, Chrome */
+            border-radius: 10px; /* CSS3 */
+            margin-bottom: 1em;
+        }
+        .defi {
+            background-color: #eee;
+        }
+        .combinaison h3 {
+            text-align: center;
+        }
+        q {
+            font-variant: italic;
+            background-color: #f0f0f0;
+        }
+        .combinaison table {
+            width: 50%;
+        }
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container_12">
+
+<div class="grid_12">
+<h1>Cul de Chouette</h1>
+<h2>Aide-Mémoire</h2>
+</div>
+
+<div class="clear"></div>
+
+<div class="grid_6">
+
+<div class="combinaison" id="chouette">
+    <h3>La Chouette</h3>
+    <ul>
+        <li>2 dés identiques</li>
+        <li>Points : <tt>(chouette)<sup>2</sup></tt></li>
+    </ul>
+</div>
+
+<div class="combinaison" id="velute">
+    <h3>La Velute</h3>
+    <ul>
+        <li>Somme de 2 dés == 3ème dé</li>
+        <li>Points : <tt>((velute)<sup>2</sup> * 2)</tt></li>
+    </ul>
+</div>
+
+<div class="combinaison" id="chouette-velute">
+    <h3>La Chouette Velute</h3>
+    <ul>
+        <li>Chouette + Velute</li>
+        <li>Crier <q>Pas mou le caillou</q> + frapper dans ses mains.</li>
+        <li>le premier gagne les points.</li>
+    </ul>
+    <h4>Égalité</h4>
+    <ul>
+        <li>Le premier qui fait un 6 en-dehors du lanceur gagne les points</li>
+        <li>Points : <tt>((velute)<sup>2</sup> * 2)</tt></li>
+    </ul>
+</div>
+
+<div class="combinaison" id="cul-de-chouette">
+    <h3>Le Cul de Chouette</h3>
+    <ul>
+        <li>3 dés identiques</li>
+        <li>Points : <tt>40 + 10 * (le Cul de Chouette)</tt></li>
+    </ul>
+</div>
+
+<div class="combinaison" id="neant">
+    <h3>Le Néant</h3>
+    <ul>
+        <li>Aucune des combinaisons ci-dessus</li>
+        <li>Le lanceur gagne une <a href="#grelottine">Grelottine</a></li>
+    </ul>
+</div>
+
+<div class="combinaison" id="suite">
+    <h3>La Suite</h3>
+    <ul>
+        <li>3 dés qui se suivent</li>
+        <li>Crier <q>Grelotte, ça picotte</q></li>
+        <li>Le dernier à le faire perd 10 points</li>
+    </ul>
+    <h4>Égalité</h4>
+    <ul>
+        <li>Se départagent en criant <q>Sans fin est la moisissure des bières bretonnes</q></li>
+        <li>Si toujours égalité : lancer les dés. le plus petit score perd les 10 points.</li>
+        <li>Si toujours égalité, ils se départagent pour ne pas perdre 20 points.</li>
+        <li>Puis 30 points, etc.</li>
+    </ul>
+    <h4>Si Velutte</h4>
+    <p>Si Suite + Velutte <tt>"1-2-3"</tt>, le lanceur gagne quand même les 18 points.</p>
+</div>
+
+</div>
+
+
+<div class="grid_6">
+
+<div class="combinaison defi" id="souflette">
+    <h3>Défi : La Souflette</h3>
+    <ul>
+        <li>Le lanceur défie un joueur de faire un 4-2-1</li>
+        <li>réussite du premier coup, il gagne 50 points et le défieur les perd.</li>
+        <li>du deuxième coup, il gagne 40 points et le défieur les perd.</li>
+        <li>du troisième coup, il gagne 30 points et le défieur les perd.</li>
+        <li>Si le joueur défié échoue, il perd 30 points et le défieur les gagne.</li>
+    </ul>
+</div>
+
+<div class="combinaison" id="sirotage">
+    <h3>Le Sirotage</h3>
+    <ul>
+        <li>Si le joueur a réussi une <a href="#chouette">Chouette</a>, il peut tenter un "Cul de Chouette".</li>
+        <li>Relance le dé manquant</li>
+        <li>Si réussi, gagne les points du <a href="#cul-de-chouette">Cul de Chouette</a></li>
+        <li>Si échec : on lui enlève les points de la Chouette.</li>
+    </ul>
+    <h4>Pari des autres joueurs</h4>
+    <p>Les autres joueurs misent 5 points sur le score du dé du lanceur. Annoncé comme suit :</p>
+    <ul>
+        <li>Linotte (1),</li>
+        <li>Alouette (2),</li>
+        <li>Fauvette (3),</li>
+        <li>Mouette (4),</li>
+        <li>Bergeronnette (5),</li>
+        <li>Chouette (6).</li>
+    </ul>
+    <p>Si gain, 25 points.</p>
+</div>
+
+<div class="combinaison defi" id="grelottine">
+    <h3>Défi : Grelottine</h3>
+    <ul>
+        <li>Si <a href="#neant">Néant</a>, crier Grelottine</li>
+        <li>Si égalité, se départager - plus petit score est prioritaire.</li>
+        <li>Le défieur choisit une combinaison que doit réaliser le lanceur.</li>
+    </ul>
+    <table>
+        <tr>
+            <th>Combinaison</th>
+            <th>Coefficient</th>
+        </tr>
+        <tr>
+            <td>Chouette Velute</td>
+            <td>8%</td>
+        </tr>
+        <tr>
+            <td>Cul de Chouette</td>
+            <td>16%</td>
+        </tr>
+        <tr>
+            <td>Velute</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>Chouette</td>
+            <td>33%</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Le défieur choisit le nb de points en jeu.</li>
+        <li><tt>nbmax = min(score défié, score défieur) * coefficient</tt></li>
+        <li>Si réussi : les points sont gagnés par le défié et perdus par le défieur</li>
+        <li>Si échec : inverse</li>
+    </ul>
+    <h4>Pari des autres joueurs</h4>
+    <p>Les autres joueurs peuvent miser 5 points sur l'issue. Gain = 25 points.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
