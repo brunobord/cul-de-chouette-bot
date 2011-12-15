@@ -110,6 +110,17 @@ class Game(object):
         # get outside any special rules
         self.in_suite = False
 
+    def remove_player(self, name):
+        "Remove a player from the game"
+        if name not in self.turns:
+            return False
+        player_position = self.turns.index(name)
+        if player_position < self.current:
+            self.current -= 1
+        self.turns.remove(name)
+        del self.gamers[name]
+        return True
+
     @property
     def current_gamer(self):
         "Return current gamer"

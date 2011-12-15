@@ -152,6 +152,20 @@ class CulDeChouetteBot(Bot):
         self.say("C'est le tour de : %s" % self.game.current_gamer)
     do_statut = do_status
 
+    @direct
+    @admin
+    @in_game
+    def do_clean(self, line):
+        "Remove the given nick out of the gamers"
+        words = line._raw_message.split()
+        # logging.debug(words)
+        if len(words) >= 2:
+            nick = words[1]
+            if self.game.remove_player(nick):
+                self.say('Le joueur %s a été retiré' % nick)
+            else:
+                self.say('Joueur %s inconnu' % nick)
+
 if __name__ == '__main__':
     bot = CulDeChouetteBot()
     bot.run()
