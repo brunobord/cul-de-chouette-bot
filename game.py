@@ -19,7 +19,7 @@ class Combinations(object):
         for key, value in temp.items():
             if value == 2:
                 return key ** 2
-        return 1000
+        return 0
 
     @property
     def velute(self):
