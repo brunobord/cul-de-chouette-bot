@@ -90,6 +90,7 @@ class Game(object):
         self.opened_registration = True
         self.in_suite = False
         self.grelotte = []
+        self.turns = []
 
     def stop(self):
         "Stop game"

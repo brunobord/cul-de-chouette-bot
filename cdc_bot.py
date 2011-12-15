@@ -162,9 +162,10 @@ class CulDeChouetteBot(Bot):
         if len(words) >= 2:
             nick = words[1]
             if self.game.remove_player(nick):
-                self.say('Le joueur %s a été retiré' % nick)
+                self.say('Le joueur %s a été retiré' % str(nick))
             else:
-                self.say('Joueur %s inconnu' % nick)
+                self.say('Joueur %s inconnu' % str(nick))
+    do_virer = do_clean
 
 if __name__ == '__main__':
     bot = CulDeChouetteBot()
