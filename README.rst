@@ -47,4 +47,5 @@ Commandes
   le jeu.
 * `roll`: le joueur dont c'est le tour lance les dés.
 * `scores`: indique les scores des joueurs.
+* `status`: [*direct*] - donne le statut du jeu et le score.
 * `stop`: [*direct*, *admin*] - arrête la partie
