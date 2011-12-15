@@ -71,7 +71,7 @@ class CulDeChouetteBot(Bot):
         s = []
         for nick, score in self.game.gamers.items():
             s.append('%s (%d)' % (nick, score))
-        self.say('Inscrits: %s' % ', '.join(s))
+        self.say('Joueurs: %s' % ', '.join(s))
 
     @in_game
     def do_moi(self, line):
@@ -138,8 +138,16 @@ class CulDeChouetteBot(Bot):
     def do_stop(self, line):
         "Stop the current game"
         self.say('Le jeu est arrêté')
-        self.brain.game.stop()
+        self.game.stop()
 
+    @direct
+    def do_status(self, line):
+        "Give the current game status"
+        if not self.game.started:
+            self.say('Aucun jeu en cours')
+            return
+        self.do_scores(line)
+        self.say("C'est le tour de : %s" % self.game.current_gamer)
 
 if __name__ == '__main__':
     bot = CulDeChouetteBot()
