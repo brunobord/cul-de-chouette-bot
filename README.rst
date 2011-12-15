@@ -49,3 +49,5 @@ Commandes
 * `scores`: indique les scores des joueurs.
 * `status` ou `statut`: [*direct*] - donne le statut du jeu et le score.
 * `stop`: [*direct*, *admin*] - arrête la partie
+* `clean` ou `virer` : [*direct*, *admin*] - vire un joueur de la partie. **ATTENTION !** Cette fonction nécessite la
+  version "GIT" de `CmdBot <https://github.com/brunobord/cmdbot>`_.
