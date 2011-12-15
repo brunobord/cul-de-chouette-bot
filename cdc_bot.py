@@ -138,7 +138,7 @@ class CulDeChouetteBot(Bot):
     def do_stop(self, line):
         "Stop the current game"
         self.say('Le jeu est arrêté')
-        self.brain['game'].stop()
+        self.brain.game.stop()
 
 
 if __name__ == '__main__':
