@@ -64,6 +64,7 @@ class CulDeChouetteBot(Bot):
         self.game.start()
         self.say('Ça démarre... qui commence ?...')
         self.say("c'est au tour de '%s'" % self.game.current_gamer)
+    do_commencer = do_start
 
     @in_game
     def do_scores(self, line):
@@ -111,6 +112,7 @@ class CulDeChouetteBot(Bot):
             self.say("c'est au tour de '%s'" % self.game.current_gamer)
         else:
             self.say("C'est pas ton tour, manant !")
+    do_jouer = do_roll
 
     def do_grelotte(self, line):
         "Grelotte ca picote"
@@ -148,6 +150,7 @@ class CulDeChouetteBot(Bot):
             return
         self.do_scores(line)
         self.say("C'est le tour de : %s" % self.game.current_gamer)
+    do_statut = do_status
 
 if __name__ == '__main__':
     bot = CulDeChouetteBot()

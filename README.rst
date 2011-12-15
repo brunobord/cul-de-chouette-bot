@@ -43,9 +43,9 @@ Commandes
 
 * `init` : [*direct*, *admin*] - démarre les inscriptions au jeu.
 * `moi` : s'inscrire au jeu
-* `start`: [*direct*, *admin*] - une fois les inscriptions terminées, on démarre
+* `start` ou `commencer`: [*direct*, *admin*] - une fois les inscriptions terminées, on démarre
   le jeu.
-* `roll`: le joueur dont c'est le tour lance les dés.
+* `roll` ou `jouer`: le joueur dont c'est le tour lance les dés.
 * `scores`: indique les scores des joueurs.
-* `status`: [*direct*] - donne le statut du jeu et le score.
+* `status` ou `statut`: [*direct*] - donne le statut du jeu et le score.
 * `stop`: [*direct*, *admin*] - arrête la partie
